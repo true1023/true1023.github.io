@@ -1,24 +1,24 @@
 # SITE CONFIGURATION
-baseurl: "/tsblog"
+baseurl: ""
 url: "https://true1023.github.io/"
-title: Type on Strap # site's title
+title: Qinluo's Blog # site's title
 description: "A website with blog posts and pages" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type on Strap # blog's title
+  title: 秦洛的个人博客 # blog's title
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
-  gravatar: # Email MD5 hash
+  gravatar: 376c34c1d3ea9588b23dabddeb6546c9 # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
      <p>Change header text in <code>_config.yml</code> <br> to update this feature.</p>
-  header_text_feature_image: assets/img/pexels/triangular.jpeg
+  header_text_feature_image: assets/img/pexels/computer2.jpeg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/true1023/tsblog">QL</a>
 
   # Icons
   rss: true  # Make sure you created a feed.xml with feed.xml layout
@@ -62,11 +62,11 @@ theme_settings:
   str_follow_on: "Follow on"
   str_rss_follow: "Follow RSS feed"
   str_email: "Email"
-  str_next_post: "Next post"
-  str_previous_post: "Previous post"
-  str_next_page: "Next"
-  str_previous_page: "Prev"
-  str_continue_reading: "Continue reading"
+  str_next_post: "下一篇"
+  str_previous_post: "上一篇"
+  str_next_page: "下一页"
+  str_previous_page: "上一页"
+  str_continue_reading: "继续阅读"
   str_javascript_required_disqus: "Please enable JavaScript to view comments."
 
   # Colours, typography and padding
