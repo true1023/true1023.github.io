@@ -9,7 +9,7 @@ description: "A website with blog posts and pages" # used by search engines
 theme_settings:
   # Meta
   title: 秦洛的个人博客 # blog's title
-  avatar: assets/img/triangle.svg
+  avatar: assets/img/avata.jpg
   favicon: assets/favicon.ico
   gravatar: 376c34c1d3ea9588b23dabddeb6546c9 # Email MD5 hash
 
