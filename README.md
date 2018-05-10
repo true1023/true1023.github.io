@@ -1,9 +1,6 @@
-# Type on Strap 
+# No name temporary
 
-[![Build Status](https://travis-ci.org/Sylhare/Type-on-Strap.svg?branch=master)](https://travis-ci.org/Sylhare/Type-on-Strap) 
-[![Gem Version](https://badge.fury.io/rb/type-on-strap.svg)](https://badge.fury.io/rb/type-on-strap)
-
-A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Rohan Chandra [type-theme](https://github.com/rohanchandra/type-theme) with a few new features:
+A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Sylhare [Type-on-Strap](https://github.com/Sylhare/Type-on-Strap) with some customized, and under is the original specification:
 
 * Responsive design
 * Portfolio page for your projects
