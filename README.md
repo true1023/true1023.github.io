@@ -33,7 +33,7 @@ A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Sylhare [T
 3. Install the theme's dependencies: `bundle install`
 4. Customize the theme
 	- Github Page: [update `_config.yml`](https://github.com/Sylhare/Type-on-Strap#site-configuration)
-5. Run the Jekyll server: `jekyll serve`
+5. Run the Jekyll server: `bundle exec jekyll serve`
 
 ## Structure
 
