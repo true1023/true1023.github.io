@@ -52,6 +52,11 @@ jekyll-theme-basically-basic
 |  ├── css                     # isolated Bootstrap, font-awesome, katex and main css
 |  ├── fonts		       # Font-Awesome, Glyphicon, and other fonts
 |  └── img		       # Images used for the template
+|      |——pexels               #Gallery 页面用到的图片
+|      |——portfolio            #Portfolio 页面用到的图片
+|      |——post                 #博文里面要用到的图片
+|      |——public               #博客其他地方要用到的图片
+|      |——thumbnails           #博文在首页展示的缩略图片
 ├── pages
 |   ├── 404.md		       # To be displayed when url is wrong
 |   ├── about.md               # About example page
