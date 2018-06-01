@@ -72,13 +72,13 @@ Shadowsocks有一个Python的包，Ubuntu16.04默认已经安装了Python, 所�
 首先安装pip,一定要加sudo获得权限
 
 ```
-sudo apt-get install pip
+sudo apt-get install python-pip
 ```
 
 接着用pip安装shadowsocks
 
 ```
-sudo pip install shadowsocks
+sudo pip install git+https://github.com/shadowsocks/shadowsocks.git@maste
 ```
 
 一切顺利的话，至此shadowsocks服务端安装完成, 恭喜！
