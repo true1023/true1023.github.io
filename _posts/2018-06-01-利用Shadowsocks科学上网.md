@@ -143,7 +143,7 @@ sudo ssserver -p 443 -k password -m aes-256-cfb --user nobody --fast-open -d res
 # 4. 连接服务器，客户端设置
 下载下来是个解压缩文件，里面有个exe程序，将这个程序解压到一个单独的文件夹下，然后点击打开.
 
-![客户端配置](/assets/img/post/2018-06-01/6.png "客户端配置")
+![客户端配置](/assets/img/post/2018-06-01/8.png "客户端配置")
 如图所示，我们只需要填写
  - **Server Addr (服务器地址)**，这里我的是`198.14.49.236`，自己的地址请回头看2.4中有写
  - **Server Port (服务器端口)**，也是刚刚设置的 `443`
@@ -151,6 +151,7 @@ sudo ssserver -p 443 -k password -m aes-256-cfb --user nobody --fast-open -d res
  - **Encryption (加密方式)**, 还是刚才我们启动服务器端程序的时候设置的，`aes-256-cfb`
 剩下的就用默认的，代理端口为 1080.
 点击OK, 注意屏幕右下角托盘里会出现一个灰色的小飞机，这个就是SS(Shadowsocks)的客户端，现在如果你刚才输入地址和密码什么的都没有问题，应该已经连接上了。
+![ss客户端](/assets/img/post/2018-06-01/9.png "ss客户端")
 
 接着介绍两种代理模式，PAC模式是比较推荐的模式，省流量：
 
