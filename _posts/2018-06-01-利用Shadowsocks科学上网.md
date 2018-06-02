@@ -18,11 +18,15 @@ excerpt_separator: <!--more-->
 
 # 1. 原理
 
+> **如何已经有人帮你部署好了服务器，那就简单多了，请跳过前面直接看 *3下载客户端***
+
 由于GFW的存在，部分用户是无法访问Google等网站，本教程的原理是墙外服务器作为跳转平台，将本来指向Google(或者其他被限制地址)的流量先转发到墙外服务器，由墙外服务器访问后转发给用户，整个过程是通过Shadowsocks这个软件进行的加密传输。
 
 ![sample](/assets/img/post/2018-06-01/1.png)
 
 Shadowsocks(ss) 是由 [Clowwindy](https://github.com/Clowwindy) 开发的一款软件，其作用本来是加密传输资料。当然，也正因为它加密传输资料的特性，使得 GFW(墙) 没法将由它传输的资料和其他普通资料区分开来（上图），也就不能干扰我们访问那些"不存在"的网站了。
+
+
 
 # 2. 选择VPS (服务器) 和部署
 
@@ -131,12 +135,12 @@ sudo ssserver -p 443 -k password -m aes-256-cfb --user nobody --fast-open -d res
 
 这个命令比上面的多了一个 `--fast-open` 选项，指示程序开启 TCP fast open, 最后的`open`也变成了`restart`，因为之前已经启动过程序了，所以这里是重启，如果没有启动过，那就还是`open`
 
-# 5. 下载客户端
+# 3. 下载客户端
 服务器端配置好了，接着就是下载windows客户端程序,
 
    [Win版客户端下载](https://github.com/shadowsocks/shadowsocks-windows/releases)
 
-# 6. 连接服务器，客户端设置
+# 4. 连接服务器，客户端设置
 下载下来是个解压缩文件，里面有个exe程序，将这个程序解压到一个单独的文件夹下，然后点击打开.
 
 ![客户端配置](/assets/img/post/2018-06-01/6.png "客户端配置")
@@ -177,7 +181,7 @@ sudo ssserver -p 443 -k password -m aes-256-cfb --user nobody --fast-open -d res
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAC设置完成
  
 
-# 7. 浏览器设置
+# 5. 浏览器设置
 这是最后一步了，相当简单，这里以Chrome浏览器为例，其他浏览器大同小异。
 打开浏览器 -> 右上角点开找到设置 -> 在新出现的页面上找到打开代理设置
 然后会出现下图
@@ -193,8 +197,11 @@ sudo ssserver -p 443 -k password -m aes-256-cfb --user nobody --fast-open -d res
 到此，重启浏览器后就应该可以访问任何你想问的网站了。
 
 ![google](/assets/img/post/2018-06-01/14.png "google")
+![twitter](/assets/img/post/2018-06-01/15.png "twitter")
+![youtube](/assets/img/post/2018-06-01/16.png "youtube")
 
-# 8. 相关技术
+
+# 6. 相关技术
  1. **PAC** [wiki地址](https://en.wikipedia.org/wiki/Proxy_auto-config)
  2. [GFWList](https://github.com/gfwlist/gfwlist)
  3. [Shadowsocks github](https://github.com/shadowsocks/shadowsocks)
