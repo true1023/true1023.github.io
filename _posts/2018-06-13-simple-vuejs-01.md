@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VueJS简明教程(一)之基本使用方法，
+title: VueJS简明教程(一)之基本使用方法
 tags: [JS, 教程, Vuejs]
 excerpt_separator: <!--more-->
 ---
