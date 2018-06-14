@@ -1,8 +1,8 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://true1023.github.io/"
+url: "http://www.qinluo1023.com/"
 title: Qinluo's Blog # site's title
-description: "A website with blog posts and pages" # used by search engines
+description: "全栈工程师日常技术教程博客" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
@@ -18,15 +18,15 @@ theme_settings:
      <p>A day without sunshine is like, you know, night.</p>
   header_text_feature_image: assets/img/public/home_header.jpg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/true1023/tsblog">QL</a>
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/true1023/true1023.github.io">QL</a>
 
   # Icons
   rss: true  # Make sure you created a feed.xml with feed.xml layout
-  email_address: 752602742@qq.com
+  email_address: shi12li12@gmail.com
   behance:
   bitbucket:
   dribbble:
-  facebook:
+  facebook: "Luo Qin"
   flickr:
   gitlab:
   github: "true1023"

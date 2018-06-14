@@ -1,6 +1,7 @@
-# No name temporary
+# Personal blog temporary
 
-A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Sylhare [Type-on-Strap](https://github.com/Sylhare/Type-on-Strap) with some customized, and under is the original specification:
+My personal blog address is: [www.qinluo1023.com](http://www.qinluo1023.com)
+A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Sylhare [Type-on-Strap](https://github.com/Sylhare/Type-on-Strap) with some customized:
 
 * Responsive design
 * Portfolio page for your projects

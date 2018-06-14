@@ -5,7 +5,7 @@ tags: [翻墙, Shadowsocks]
 excerpt_separator: <!--more-->
 ---
 
-*最后更新于2018/06/02*
+若不曾睁眼看世界...
 
 ---
 <!--more-->
