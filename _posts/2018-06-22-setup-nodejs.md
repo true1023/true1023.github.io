@@ -6,12 +6,8 @@ excerpt_separator: <!--more-->
 ---
 
 # 1. NodeJS
-一种编译器，可以解析JavaScript语言，采用Chrome V8引擎，可以理解为你安装了一个Chrome浏览器，然后把浏览器的图形化界面都扒光，把没必要的一些功能都扒光，只留下一个核心V8引擎，然后把这个引擎外面封装一些接口，就成了NodeJS。
+Javascript运行环境，可以解析JavaScript语言，采用Chrome V8引擎，可以理解为你安装了一个Chrome浏览器，然后把浏览器的图形化界面都扒光，把没必要的一些功能都扒光，只留下一个核心V8引擎，再把这个引擎外面封装一些接口，就成了NodeJS。
 <!--more-->
-
-就像C语言要有C语言运行环境（GCC）；C#要有C#的运行环境（CLR）；Java要有Java的运行环境（JRE）。NodeJS就是类似于这样的一个运行环境用来解析JavaScript语言的。
-
-*顺便一提NodeJS不是用JavaScript语言编写的，可能是C什么写的吧。*
 
 # 2. NPM（CNPM）
 
@@ -19,31 +15,31 @@ excerpt_separator: <!--more-->
 
 可以类比于C#的NuGet，Ubuntu的APT，PHP的Compose，这些都是对应环境的包管理工具。
 
-NPM包管理工具有一个网站，贡献者（包开发人员，有很多人，自愿的，开源的）把自己打包好的代码起个名字，写个介绍就可以上传到这个网站，供全世界的NPM使用者下载使用，这也是我们使用的那些包的来源。
-
-但是因为国内的开发者访问NPM官方资源会很慢，可以说基本不能用，所以我们一般把本地NPM的包地址指向国内的淘宝镜像
-
+因为国内的开发者访问NPM官方资源会很慢，可以说基本不能用，所以我们一般把NPM的包地址指向国内的淘宝镜像
 
 # 3. 搭建环境
 
-去下面的地址，下载下来对应版本的NodeJs，像安装qq那种软件一样安装就好了
+去下面的地址，下载下来对应版本的NodeJs并且安装
 [NodeJS官网下载地址](http://nodejs.cn/download/)
-NodeJS和NPM是绑定安装的，装好NodeJS以后默认NPM就已经装好了，然后启动任意一个终端界面输入下面命令,如果现实版本号，则安装成功
+NodeJS和NPM是绑定安装的，装好NodeJS以后默认NPM就已经装好了，然后启动任意一个终端界面输入下面命令,如果出现版本号，则安装成功
 
 ```cmd
 node -v
 npm -v
 ```
+`node -v`查询nodejs版本，`npm -v`查询npm版本号
 
-如果你在墙内，请继续往下看如何安装CNPM，也就是用淘宝山寨版的NPM
+如果是在中国大陆地区的用户最好安装CNPM，一个自动绑定淘宝镜像的NPM
+
 详细的CNPM信息点[这里](http://npm.taobao.org)
 
-## 3.1 在刚才的命令下面输入下面的命令
+## 3.1 安装cnpm
+
 ```cmd
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
-解释一下
+解释下上面的参数
 
 `install` 安装
 
@@ -65,7 +61,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm install webpack --save-dev
 ```
 参数解释：
-`--save` 将webpack这个包保存到配置文件
+`--save` 将webpack这个包的信息保存到`package.json`配置文件
 `-dev` 安装开发版本而非发布版
 
 
@@ -76,27 +72,25 @@ cnpm install webpack --save-dev
 
 ![NodeDemo目录结构](/assets/img/post/2018-06-22/1.png)
 
-有一个文件`package.json`，一个文件夹`node-modules`。
+一个文件`package.json`，一个文件夹`node-modules`。
 
 ## 4.1 node-modules
 
-这个`node-modules`的文件夹就保存着你通过CNPM安装的所有的本地包的代码，一般情况下我们是不需要动这个文件夹的。
+`node-modules`文件夹保存着你通过CNPM安装的所有的本地包代码，一般情况下我们是不需要动这个文件夹的。
 
-那么为什么是本地包代码呢，是因为我们刚才安装包（webpack包）的时候并没有加`-g`这个参数，而这个参数的意义就是把这个包的代码全局安装，这样的话在任意项目中（NodeDemo这种文件夹）都可以使用这个包，而像是安装在`NodeDemo/node-modules/`这种文件夹里的包，就只有这一个项目可以用。
+那么为什么是本地包代码呢，是因为我们刚才安装包（webpack包）的时候并没有加`-g`这个参数，而这个参数的意义就是把这个包的代码全局安装，这样的话在任意项目中（比如NodeDemo这种文件夹）都可以使用这个包，而像是安装在`NodeDemo/node-modules/`这种文件夹里的包，就只有这一个项目可以用。
 
 全局包安装地址是
 `C:\Users\{username}\AppData\Roaming\npm\node_modules`
 ![全局包地址](/assets/img/post/2018-06-22/2.jpg)
 
-这里面就会有刚刚我们全局安装的CNPM
+这里面就会有刚刚我们全局安装的CNPM包
 
-顺便一提为什么全局包哪都可以用，这个跟NodeJS的寻址顺序有关系，它会先找全局地址里的包，再找当前项目里面的包。
-
-其实根据这个文件夹的名字就不难看出来，node-modules，node就是nodejs，modules就是模块的意思，合起来就是nodejs的模块文件夹
+> 顺便一提为什么全局包哪都可以用，这个跟NodeJS的寻址顺序有关系，它会先找全局地址里的包，再找当前项目里面的包。
 
 ## 4.2 package.json
 
-再来看看`package.json`这个json文件，直接打开看看，只有几句话
+打开`package.json`，里面只有几行配置
 
 ```json
 {
@@ -106,18 +100,21 @@ cnpm install webpack --save-dev
 }
 
 ```
-这个文件就是一个配置文件，用来告诉CNPM这个项目里都安装了哪些包，记得之前`--save`选项吗，如果安装包的时候加上这个选项，就会把那个包的信息加到这个文件里（package.json），如果不加`--save`，就不会加到这个文件里了。
+这个文件就是一个配置文件，用来告诉CNPM这个项目里都安装了哪些包，记得之前`--save`选项吗，如果安装包的时候加上这个选项，就会把那个包的信息加到这个文件里（package.json），如果不加`--save`，就不会加到这个文件里了,但是还是会安装到node-modules文件夹里
 
 加到这个文件里的意义有两个，第一是可以手工打开查看当前项目里安装了哪些包以及版本信息，第二就是你可以通过这个文件随时重建这个项目结构，举个例子，我们现在把node-modules这个文件夹删除。
 
 然后在Powershell（或者其他终端，必须在NodeDemo这个文件夹目录下）里面输入
+
 ```
 cnpm install
 ```
 
-
 运行`cnpm install`后，cnpm会读取`package.json`文件夹的内容，并把里面配置的包重新安装一遍。
+
 当然，`package.json`还可以配置项目名称，作者名称或者其他一些参数，不过一般在创建项目的时候就已经设置好了
+
+[package.json官网说明](https://docs.npmjs.com/files/package.json)
 
 ---
 
@@ -127,7 +124,7 @@ NodeJS是环境，一个执行JS代码的解释器
 
 NPM是一个运行在NodeJS上的包管理器，可以方便的通过它管理下载各种可以在NodeJS环境下运行的包
 
-这也是现代前端的开发基础，不过NodeJS不仅可以用来开发前端，它当时出现的意义是为了让javascript代码也可以在服务端运行并且作为一个服务器运行的。
+这也是现代前端的开发基础
 
 
 

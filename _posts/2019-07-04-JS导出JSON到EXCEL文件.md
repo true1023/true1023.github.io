@@ -35,4 +35,5 @@ XLSX.utils.book_append_sheet(wb, ws, "People");
 /* 生成xlsx文件 */
 XLSX.writeFile(wb, "sheetjs.xlsx");
 ```
-[源代码](http://jsfiddle.net/true1023/yn15fbcL/2/)
+
+[在线DEMO及源代码](http://jsfiddle.net/true1023/yn15fbcL/25/)
