@@ -294,5 +294,7 @@ const routes = [
 
 在下一个教程中，我会分别介绍路由的参数传递和路由守护功能。
 
+[源代码](https://github.com/true1023/vue-tech/tree/master/vue03/spa)
+
 **码字不易，喜欢请点赞**
 {% endraw %}
