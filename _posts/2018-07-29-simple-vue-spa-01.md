@@ -296,5 +296,7 @@ const routes = [
 
 [源代码](https://github.com/true1023/vue-tech/tree/master/vue03/spa)
 
+[如何用VUE2构建一个简单的单页应用(SPA) 下](http://www.qinluo1023.com/2018/07/29/simple-vue-spa-02.html)
+
 **码字不易，喜欢请点赞**
 {% endraw %}
