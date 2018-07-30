@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 如何用VUE2构建一个简单的单页应用(SPA) 下
+title: 三十分钟学会使用VUE搭建单页应用(SPA) 下
 tags: [JS, 教程, Vuejs]
 excerpt_separator: <!--more-->
 ---
 
-在上一章中，我们学习的用VUE2构建简单的单页应用 (SPA)。
+在上一章中，我们学习了用VUE2构建简单的单页应用 (SPA)。
 
 在本章中，我们将要学习：
 

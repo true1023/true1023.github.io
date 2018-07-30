@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何用VUE2构建一个简单的单页应用(SPA) 上
+title: 三十分钟学会使用VUE搭建单页应用(SPA) 上
 tags: [JS, 教程, Vuejs]
 excerpt_separator: <!--more-->
 ---
