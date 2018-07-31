@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 1. 通过路由传递参数
 2. 使用路由守卫 (route guards)使未授权的用户不能访问某些特殊页面
 
-我会在[上一章](http://www.qinluo1023.com/2018/07/29/simple-vue-spa-01.html)写好的程序上继续添加功能，你可以直接在我的github上克隆上一章的[源代码](https://github.com/true1023/vue-tech/tree/master/vue03/spa)
+我会在[上一章](http://www.qinluo1023.com/2018/07/29/simple-vue-spa-01.html)写好的程序上继续添加功能，你可以直接在我的github上克隆上一章的[源代码](https://github.com/true1023/teach_code/tree/master/vue03/spa)
 
 <!--more-->
 {% raw %}
@@ -246,7 +246,7 @@ router.beforeEach((to, from, next) => {
 最后如果你对我的文章有任何疑问，不要犹豫，在下方留言，或者通过QQ,微信，邮箱，微博任何一个方式联系我，我希望有更多志同道合的朋友可以一起探讨。
 
 
-[源代码](https://github.com/true1023/vue-tech/tree/master/vue03/spa2)
+[源代码](https://github.com/true1023/teach_code/tree/master/vue03/spa2)
 
 **码字不易，喜欢请点赞**
 {% endraw %}
