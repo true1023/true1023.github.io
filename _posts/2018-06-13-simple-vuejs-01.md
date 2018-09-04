@@ -365,7 +365,7 @@ var myVue = new Vue({
 
 最后的最后，转载请注明出处，谢谢
 
-附:[源代码](https://github.com/true1023/vue-tech/tree/master/vue01init)
+附:[源代码](https://github.com/true1023/Teach-Code/tree/master/JS/VUE/vue01init)
 {% endraw %}
 
 下一篇：[VueJS简明教程(二)之组件](http://www.qinluo1023.com/2018/07/19/simple-vuejs-02.html)
